@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  --forest-ink: #34483d;
+  --forest-deep: #f4f3ed;
+  --ink: #2c4035;
+  --pine: #65836f;
+  --sage: #e4e9df;
+  --cream: #2c4035;
+  --terracotta: #ae654b;
+  --amber: #b78647;
+  --cardboard: #c99a62;
+  --mono: 'IBM Plex Mono', monospace;
+  --display: 'Space Grotesk', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--ink);
+  background: #f4f3ed;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 12% 10%, rgba(101, 131, 111, 0.11), transparent 27%),
+    radial-gradient(circle at 90% 4%, rgba(174, 101, 75, 0.08), transparent 23%),
+    linear-gradient(180deg, #faf9f5, #f1f0e9);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.35;
+  background:
+    linear-gradient(rgba(52, 72, 61, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(52, 72, 61, 0.025) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: radial-gradient(circle at center, black, transparent 78%);
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.09;
+  background-image:
+    radial-gradient(rgba(65, 75, 65, 0.16) 0.7px, transparent 0.7px),
+    radial-gradient(rgba(65, 75, 65, 0.1) 0.7px, transparent 0.7px);
+  background-position: 0 0, 12px 12px;
+  background-size: 24px 24px;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--display);
+  font-weight: 600;
+  letter-spacing: -0.06em;
+}
+
+p,
+span,
+strong,
+small {
+  font-family: 'Segoe UI', sans-serif;
+}
